@@ -2,11 +2,12 @@
 <html>
     <head>
         <title>Maria's Portfolio</title>
-        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <link href="/css/style.css" type="text/css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Open+Sans&family=Playfair+Display:wght@900&family=Poppins:wght@100&display=swap" rel="stylesheet">
+
 
         <style>
             body {
@@ -22,6 +23,7 @@
                 text-align: center;
             }
         </style>
+
     </head>
 
     <body>
@@ -42,10 +44,18 @@
             <div class="content">
                 <img src="images/Maria-image.jpeg" alt="Image of Maria" height="300px" margin="10px">
                 <div class="aboutMe">
-                    <h1>Hey! I'm Maria.</h1>
+                    <div id="draggable" class="ui-widget-content">
+                        <h1>Hey! I'm Maria.</h1>
+                      </div>
                     <p><i>UX Designer</i></p>
                     <p>I thought Adobe Illustrator was the best, and then I met Figma. </p>
-                    <button>download resume</button>
+                    <div class="container">
+                        <div id="toggle">My Contact Information</div>
+                        <ul id="dropDown">
+                          <li>mwatson409@gmail.com</li>
+                          <li>785-550-9753</li>
+                          <li>www.linkedin.com/in/mariawats</li>
+                        </ul>
                 </div>
             </div>
         </section>
@@ -53,8 +63,12 @@
 <!--  My UX Skills section coded using CSS flex -->
 
 
+        
         <section class="mySkills"> 
             <h1>My Skills</h1>
+
+
+
             <div class="flexContainer"> 
                 <div class="skillz"> 
                     <img>
@@ -85,6 +99,8 @@
                 </div>
             </div>
         </section>
+
+
 
         <h1>My Work</h1>
         <section class="myWork">
@@ -133,5 +149,9 @@
             </ul>
         </footer>
 
+
+
     </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/index.js"></script>
 </html>
